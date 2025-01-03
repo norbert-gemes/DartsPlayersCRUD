@@ -1,1 +1,37 @@
 <h1>Darts Players</h1>
+
+<table class="table table-hover table-bordered">
+  <tr class="text-center">
+    <th></th>
+    <th>Név</th>
+    <th>Nemzetiség</th>
+    <th>Világbajnoki címek</th>
+    <th>PDC torna győzelmek</th>
+    <th>Becenév</th>
+    <th>Születési hely</th>
+    <th>Kor</th>
+    <th>Aktív</th>
+    <th>Bevonuló zenéje</th>
+  </tr>
+  @for (player of players; track $index){
+  <tr>
+    <td>
+      <span (click)="modify(player)">&#9998;</span>
+      <span (click)="delete(player)">&#10008;</span>
+    </td>
+    <td>
+      {{ player.name }}
+    </td>
+    <td>{{ player.nationality }}</td>
+    <td>{{ player.wchamptitles }}</td>
+    <td>{{ player.pdc_titles }}</td>
+    <td>{{ player.nickname }}</td>
+    <td>{{ player.hometown }}</td>
+    <td>{{ player.age }}</td>
+    <td>{{ player.active }}</td>
+    <td>{{ player.walkOnSong }}</td>
+  </tr>
+  }
+
+  <app-player-data></app-player-data>
+</table>

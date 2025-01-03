@@ -1,5 +1,5 @@
 export interface PlayerModel {
-  id: number;
+  id: number | undefined;
   name: string;
   nationality: string;
   wchamptitles: number;
@@ -7,5 +7,6 @@ export interface PlayerModel {
   nickname: string;
   hometown: string;
   age: number;
+  active: boolean;
   walkOnSong: string;
 }
