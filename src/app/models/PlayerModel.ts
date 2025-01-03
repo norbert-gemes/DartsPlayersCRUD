@@ -7,5 +7,5 @@ export interface PlayerModel {
   nickname: string;
   hometown: string;
   age: number;
-  active: boolean;
+  walkOnSong: string;
 }

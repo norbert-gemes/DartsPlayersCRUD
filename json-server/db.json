@@ -9,7 +9,8 @@
       "nickname": "Mighty Mike",
       "hometown": "Boxtel, Netherlands",
       "age": 35,
-      "active": true
+      "active": true,
+      "walkOnSong": "Seven Nation Army by The White Stripes"
     },
     {
       "id": 2,
@@ -20,7 +21,8 @@
       "nickname": "The Power",
       "hometown": "Burslem, England",
       "age": 64,
-      "active": false
+      "active": false,
+      "walkOnSong": "The Power by Snap!"
     },
     {
       "id": 3,
@@ -31,7 +33,8 @@
       "nickname": "The Flying Scotsman",
       "hometown": "Dunfermline, Scotland",
       "age": 53,
-      "active": true
+      "active": true,
+      "walkOnSong": "Jump Around by House of Pain"
     },
     {
       "id": 4,
@@ -42,7 +45,8 @@
       "nickname": "Snakebite",
       "hometown": "Musselburgh, Scotland",
       "age": 54,
-      "active": true
+      "active": true,
+      "walkOnSong": "Don't Stop the Party by Pitbull"
     },
     {
       "id": 5,
@@ -53,7 +57,8 @@
       "nickname": "Voltage",
       "hometown": "Ickleford, England",
       "age": 34,
-      "active": true
+      "active": true,
+      "walkOnSong": "Hot, Hot, Hot by Arrow"
     },
     {
       "id": 6,
@@ -64,7 +69,9 @@
       "nickname": "Barney",
       "hometown": "The Hague, Netherlands",
       "age": 57,
-      "active": true
+      "active": true,
+
+      "walkOnSong": "Eye of the Tiger by Survivor"
     },
     {
       "id": 7,
@@ -75,7 +82,8 @@
       "nickname": "Cool Hand Luke",
       "hometown": "Newbury, England",
       "age": 29,
-      "active": true
+      "active": true,
+      "walkOnSong": "I Predict a Riot by Kaiser Chiefs"
     },
     {
       "id": 8,
@@ -86,7 +94,8 @@
       "nickname": "The Iceman",
       "hometown": "Markham, Wales",
       "age": 38,
-      "active": true
+      "active": true,
+      "walkOnSong": "Ice Ice Baby by Vanilla Ice"
     },
     {
       "id": 9,
@@ -97,7 +106,8 @@
       "nickname": "Jackpot",
       "hometown": "Stoke-on-Trent, England",
       "age": 39,
-      "active": false
+      "active": false,
+      "walkOnSong": "Reach Up by Perfecto Allstarz"
     }
   ]
 }
