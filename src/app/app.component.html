@@ -1,5 +1,6 @@
 <h1>Darts Players</h1>
 
+@if(!newPlayer && !modifiedPlayer){
 <table class="table table-hover table-bordered">
   <tr class="text-center">
     <th></th>
@@ -16,8 +17,8 @@
   @for (player of players; track $index){
   <tr>
     <td>
-      <span (click)="modify(player)">&#9998;</span>
-      <span (click)="delete(player)">&#10008;</span>
+      <span (click)="modify(player)" id="mod">&#9998;</span>
+      <span (click)="delete(player)" id="del">&#10008;</span>
     </td>
     <td>
       {{ player.name }}
@@ -32,6 +33,18 @@
     <td>{{ player.walkOnSong }}</td>
   </tr>
   }
-
-  <app-player-data></app-player-data>
 </table>
+<div class="btn-div">
+  <button class="btn" (click)="new()">Új felvétele</button>
+</div>
+}
+<app-player-data
+  [playerData]="newPlayer"
+  (canceled)="CanceledForm()"
+  (saved)="saveNew($event)"
+></app-player-data>
+<app-player-data
+  [playerData]="modifiedPlayer"
+  (canceled)="CanceledForm()"
+  (saved)="saveModified($event)"
+></app-player-data>

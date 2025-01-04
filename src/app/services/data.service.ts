@@ -14,4 +14,16 @@ export class DataService {
   getPlayer(): Observable<PlayerModel[]> {
     return this.http.get<PlayerModel[]>(this.url);
   }
+
+  addPlayer(player: PlayerModel): Observable<PlayerModel> {
+    return this.http.post<PlayerModel>(this.url, player);
+  }
+
+  modifyPlayer(player: PlayerModel): Observable<PlayerModel> {
+    return this.http.put<PlayerModel>(`${this.url}/${player.id}`, player);
+  }
+
+  deletePlayer(player: PlayerModel): Observable<PlayerModel> {
+    return this.http.delete<PlayerModel>(`${this.url}/${player.id}`);
+  }
 }

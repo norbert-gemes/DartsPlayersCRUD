@@ -2,11 +2,11 @@ export interface PlayerModel {
   id: number | undefined;
   name: string;
   nationality: string;
-  wchamptitles: number;
-  pdc_titles: number;
+  wchamptitles: string;
+  pdc_titles: string;
   nickname: string;
   hometown: string;
-  age: number;
+  age: string;
   active: boolean;
   walkOnSong: string;
 }

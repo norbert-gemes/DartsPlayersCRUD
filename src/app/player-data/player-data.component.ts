@@ -15,12 +15,12 @@ export class PlayerDataComponent {
     return event.target.value;
   }
 
-  cancel() {
+  Cancel() {
     this.playerData = undefined;
     this.canceled.emit();
   }
 
-  save() {
+  Save() {
     this.saved.emit(this.playerData);
   }
 }

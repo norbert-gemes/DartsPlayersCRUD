@@ -1,0 +1,78 @@
+.row {
+  text-align: center;
+}
+
+.row input {
+  text-align: right;
+  margin: 20;
+}
+
+form {
+  font-size: 20px;
+}
+
+.form-label {
+  text-decoration: underline;
+  margin: 10px;
+  text-align: left;
+}
+
+.form-control {
+  margin: 5px;
+}
+
+input[type="text"] {
+  height: 20px;
+  width: 115px;
+  font-size: medium;
+  border: 4px solid black;
+  border-radius: 25px;
+  background-color: gold;
+}
+
+input[type="number"] {
+  height: 20px;
+  width: 115px;
+  background-color: gold;
+  border: 4px solid black;
+  border-radius: 25px;
+  font-size: medium;
+}
+
+.cancel {
+  background-color: red;
+  text-align: center;
+  align-self: center;
+  border: 1px solid black;
+  height: 70px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: large;
+  font-weight: bold;
+  margin: 50px;
+}
+
+.cancel:hover {
+  background-color: black;
+  color: red;
+  cursor: pointer;
+}
+
+.save {
+  background-color: green;
+  text-align: center;
+  align-self: center;
+  border: 1px solid black;
+  height: 70px;
+  width: 150px;
+  border-radius: 50px;
+  font-size: large;
+  font-weight: bold;
+  margin: 50px;
+}
+
+.btn:hover {
+  background-color: black;
+  color: green;
+  cursor: pointer;
+}

@@ -1,1 +1,114 @@
-<p>Works</p>
+@if (playerData){
+<div class="row">
+  <form>
+    <div class="mb-3 divs">
+      <label for="name" class="form-label">Játékos neve</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        [value]="playerData.name"
+        (change)="playerData.name = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="nationality" class="form-label">Játékos nemzetisége</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nationality"
+        [value]="playerData.nationality"
+        (change)="playerData.nationality = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="wchamptitles" class="form-label"
+        >Játékos világbajnoki címeinek száma</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="wchamptitles"
+        [value]="playerData.wchamptitles"
+        (change)="playerData.wchamptitles = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="pdc_titles" class="form-label"
+        >Játékos PDC címeinek száma</label
+      >
+      <input
+        type="number"
+        class="form-control"
+        id="pdc_titles"
+        [value]="playerData.pdc_titles"
+        (change)="playerData.pdc_titles = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="nickname" class="form-label">Játékos beceneve</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nickname"
+        [value]="playerData.nickname"
+        (change)="playerData.nickname = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="hometown" class="form-label">Játékos születési helye</label>
+      <input
+        type="text"
+        class="form-control"
+        id="hometown"
+        [value]="playerData.hometown"
+        (change)="playerData.hometown = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="age" class="form-label">Játékos kora</label>
+      <input
+        type="number"
+        class="form-control"
+        id="age"
+        [value]="playerData.age"
+        (change)="playerData.age = getData($event)"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <p>Játékos aktív-e?</p>
+      <label for="active" class="form-label">Igen</label>
+      <input
+        type="radio"
+        class="form-control"
+        id="active"
+        name="active"
+        [checked]="playerData.active"
+      />
+      <label for="not_active" class="form-label">Nem</label>
+      <input
+        type="radio"
+        class="form-control"
+        id="not_active"
+        name="not_active"
+        [checked]="!playerData.active"
+      />
+    </div>
+    <div class="mb-3 divs">
+      <label for="walkOnSong" class="form-label">Játékos bevonuló zenéje</label>
+      <input
+        type="text"
+        class="form-control"
+        id="walkOnSong"
+        name="walkOnSong"
+        [value]="playerData.walkOnSong"
+        (change)="playerData.walkOnSong = getData($event)"
+      />
+    </div>
+  </form>
+</div>
+<div class="row">
+  <button class="btn cancel" (click)="Cancel()">Mégsem</button>
+  <button class="btn save" (click)="Save()">Mentés</button>
+</div>
+}

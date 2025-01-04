@@ -29,12 +29,12 @@ export class AppComponent {
       id: undefined,
       name: '',
       nationality: '',
-      wchamptitles: 0,
-      pdc_titles: 0,
+      wchamptitles: '',
+      pdc_titles: '',
       nickname: '',
       hometown: '',
-      age: 0,
-      active: true,
+      age: '',
+      active: false,
       walkOnSong: '',
     };
   }
@@ -43,5 +43,41 @@ export class AppComponent {
     this.modifiedPlayer = JSON.parse(JSON.stringify(player));
   }
 
-  delete(player: PlayerModel) {}
+  saveNew(player: PlayerModel) {
+    this.dataService.addPlayer(player).subscribe({
+      next: (data: PlayerModel) => {
+        this.players.push(data);
+        this.modifiedPlayer = undefined;
+        this.newPlayer = undefined;
+      },
+      error: (err) => console.log(err),
+    });
+  }
+
+  saveModified(player: PlayerModel) {
+    this.dataService.modifyPlayer(player).subscribe({
+      next: (data: PlayerModel) => {
+        const index = this.players.findIndex((play) => play.id == player.id);
+        this.players[index] = data;
+        this.modifiedPlayer = undefined;
+        this.newPlayer = undefined;
+      },
+      error: (err) => console.log(err),
+    });
+  }
+
+  delete(player: PlayerModel) {
+    this.dataService.deletePlayer(player).subscribe({
+      next: (data: PlayerModel) => {
+        const index = this.players.findIndex((play) => play.id == player.id);
+        this.players.splice(index, 1);
+      },
+      error: (err) => console.log(err),
+    });
+  }
+
+  CanceledForm() {
+    this.modifiedPlayer = undefined;
+    this.newPlayer = undefined;
+  }
 }

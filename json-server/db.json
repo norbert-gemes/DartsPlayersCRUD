@@ -1,113 +1,88 @@
 {
   "darstplayers": [
     {
-      "id": 1,
-      "name": "Michael van Gerwen",
-      "nationality": "Dutch",
-      "wchamptitles": 3,
-      "pdc_titles": 41,
-      "nickname": "Mighty Mike",
-      "hometown": "Boxtel, Netherlands",
-      "age": 35,
-      "active": true,
-      "walkOnSong": "Seven Nation Army by The White Stripes"
-    },
-    {
-      "id": 2,
+      "id": "1",
       "name": "Phil Taylor",
       "nationality": "English",
       "wchamptitles": 16,
       "pdc_titles": 85,
       "nickname": "The Power",
-      "hometown": "Burslem, England",
+      "hometown": "Stoke-on-Trent",
       "age": 64,
       "active": false,
-      "walkOnSong": "The Power by Snap!"
+      "walkOnSong": "The Power"
     },
     {
-      "id": 3,
+      "id": "2",
+      "name": "Michael van Gerwen",
+      "nationality": "Dutch",
+      "wchamptitles": 3,
+      "pdc_titles": 44,
+      "nickname": "Mighty Mike",
+      "hometown": "Boxtel",
+      "age": 35,
+      "active": true,
+      "walkOnSong": "Seven Nation Army"
+    },
+    {
+      "id": "3",
       "name": "Gary Anderson",
       "nationality": "Scottish",
       "wchamptitles": 2,
-      "pdc_titles": 20,
+      "pdc_titles": 31,
       "nickname": "The Flying Scotsman",
-      "hometown": "Dunfermline, Scotland",
+      "hometown": "Livingston",
       "age": 53,
       "active": true,
-      "walkOnSong": "Jump Around by House of Pain"
+      "walkOnSong": "Jump Around"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Peter Wright",
       "nationality": "Scottish",
-      "wchamptitles": 1,
-      "pdc_titles": 36,
+      "wchamptitles": 2,
+      "pdc_titles": 35,
       "nickname": "Snakebite",
-      "hometown": "Musselburgh, Scotland",
-      "age": 54,
+      "hometown": "Haddington",
+      "age": 53,
       "active": true,
-      "walkOnSong": "Don't Stop the Party by Pitbull"
+      "walkOnSong": "Don't Stop The Party"
     },
     {
-      "id": 5,
-      "name": "Rob Cross",
-      "nationality": "English",
-      "wchamptitles": 1,
-      "pdc_titles": 7,
-      "nickname": "Voltage",
-      "hometown": "Ickleford, England",
-      "age": 34,
-      "active": true,
-      "walkOnSong": "Hot, Hot, Hot by Arrow"
-    },
-    {
-      "id": 6,
+      "id": "5",
       "name": "Raymond van Barneveld",
       "nationality": "Dutch",
       "wchamptitles": 5,
-      "pdc_titles": 30,
+      "pdc_titles": 21,
       "nickname": "Barney",
-      "hometown": "The Hague, Netherlands",
-      "age": 57,
+      "hometown": "The Hague",
+      "age": 56,
       "active": true,
-
-      "walkOnSong": "Eye of the Tiger by Survivor"
+      "walkOnSong": "Eye of the Tiger"
     },
     {
-      "id": 7,
-      "name": "Luke Humphries",
-      "nationality": "English",
-      "wchamptitles": 1,
-      "pdc_titles": 10,
-      "nickname": "Cool Hand Luke",
-      "hometown": "Newbury, England",
-      "age": 29,
-      "active": true,
-      "walkOnSong": "I Predict a Riot by Kaiser Chiefs"
-    },
-    {
-      "id": 8,
-      "name": "Gerwyn Price",
-      "nationality": "Welsh",
-      "wchamptitles": 1,
-      "pdc_titles": 24,
-      "nickname": "The Iceman",
-      "hometown": "Markham, Wales",
-      "age": 38,
-      "active": true,
-      "walkOnSong": "Ice Ice Baby by Vanilla Ice"
-    },
-    {
-      "id": 9,
+      "id": "6",
       "name": "Adrian Lewis",
       "nationality": "English",
       "wchamptitles": 2,
       "pdc_titles": 18,
       "nickname": "Jackpot",
-      "hometown": "Stoke-on-Trent, England",
+      "hometown": "Stoke-on-Trent",
       "age": 39,
-      "active": false,
-      "walkOnSong": "Reach Up by Perfecto Allstarz"
+      "active": true,
+      "walkOnSong": "Reach Up"
+    },
+    {
+      "id": "d1ff",
+      "name": "Luke Humphries",
+      "nationality": "English",
+      "wchamptitles": "1",
+      "pdc_titles": "10",
+      "nickname": "Cool Hand Luke",
+      "hometown": "Wiggan",
+      "age": "39",
+      "active": true,
+      "walkOnSong": "I Predict a Riot by Kaiser Chiefs"
     }
   ]
 }
