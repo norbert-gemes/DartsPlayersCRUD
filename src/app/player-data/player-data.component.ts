@@ -15,6 +15,10 @@ export class PlayerDataComponent {
     return event.target.value;
   }
 
+  getDataInt(event: any): number {
+    return Number(event.target.value);
+  }
+
   Cancel() {
     this.playerData = undefined;
     this.canceled.emit();
