@@ -83,6 +83,18 @@
       "age": "39",
       "active": true,
       "walkOnSong": "I Predict a Riot by Kaiser Chiefs"
+    },
+    {
+      "id": "fb63",
+      "name": "Luke Littler",
+      "nationality": "English",
+      "wchamptitles": "1",
+      "pdc_titles": "10",
+      "nickname": "The Nuke",
+      "hometown": "Manchester",
+      "age": "17",
+      "active": false,
+      "walkOnSong": "Greenlight by Pitbull"
     }
   ]
 }
